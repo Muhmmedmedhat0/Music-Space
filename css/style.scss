@@ -21,6 +21,8 @@ body {
   width: 100%;
   padding-left: 0;
   margin: 0 auto;
+  object-fit: cover;
+
 }
 
 .row {
@@ -370,7 +372,7 @@ body {
       .btn {
         width: 16.6rem;
         height: 4.3rem;
-        background: #fde460;
+        background: #f7e9a2;
         border-radius: 8px;
       }
     }
@@ -378,6 +380,45 @@ body {
   .prev-event-gallery {
     padding: 2.5rem;
     padding-top: 0;
+    .food-item {
+      position: relative;
+      .food-layer {
+        position: absolute;
+        bottom: 5px;
+        left: 32px;
+        width: 82%;
+        height: 55%;
+        background: rgba(253, 228, 96, 0.7);
+        border-radius: 0px 0px 12px 12px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s;
+        .layer-content {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 90%;
+          text-align: center;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+          .food__name {
+            text-transform: capitalize;
+            font-style: italic;
+            font-weight: 400;
+            padding: 0.5rem;
+          }
+          .food__price {
+            text-transform: capitalize;
+            font-style: italic;
+            padding: 1rem;
+          }
+        }
+      }
+      &:hover .food-layer {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
 }
 // end food-menu
