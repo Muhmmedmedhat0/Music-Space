@@ -173,14 +173,14 @@ body {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin: auto;
+  // margin: auto;
   z-index: 6;
 }
 
 .dots {
   position: absolute;
   bottom: 0rem;
-  left: 54%;
+  left: 50%;
 }
 .dot {
   color: #fff;
@@ -359,6 +359,8 @@ body {
 // start food-menu
 .food-menu {
   position: relative;
+  // width: 100%;
+  // width: 100vw;
   .food-menu-content {
     padding: 2.5rem;
     justify-content: space-between;
@@ -504,6 +506,9 @@ body {
     justify-content: flex-start;
     padding: 0.5rem;
     width: 100%;
+    .dots{
+      display: none;
+    }
     .main-content {
       width: 100%;
       .main-content__title {
@@ -617,6 +622,9 @@ body {
   }
   .food-menu {
     background-color: #1a1a1a;
+    .dots{
+      display: none;
+    }
     width: 100%;
     .food-menu-content {
       padding: 1rem;
@@ -753,7 +761,7 @@ body {
     }
   }
   .food-menu {
-    margin: auto;
+   
     .food-menu-content {
       padding: 1rem;
       .heading {
@@ -826,6 +834,11 @@ body {
           left: 12rem;
         }
       }
+    }
+  }
+  .my-slides{
+    .section.food-menu{
+      width: 100%;
     }
   }
 }
