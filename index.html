@@ -16,77 +16,239 @@
 <body>
   <main>
     <div class="container-fluid">
-        <!-- start side -->
-        <div class="slideshow-container">
-
-        </div>
-        <!-- end slide  -->
-
-      <section class="section home row page fs my-slides fade">
-        <aside class="aside col-2">
-          <div class="main-header">
-            <div class="main-header__logo">
-              <a href="#"><img src="./public/images/logo1.png" alt="logo" /></a>
-            </div>
-            <nav class="main-header-nav">
-              <a href="#" class="header-nav__link active" onclick="topFunction()" id="myBtn">Home</a>
-              <a href="#" class="header-nav__link">Upcoming Event</a>
-              <a href="#" class="header-nav__link">Contact Us</a>
-              <a href="#" class="header-nav__link">FAQ’s</a>
-            </nav>
-          </div>
-        </aside>
-        <div class="main home row col-10">
-          <div class="main-content col-7">
-            <h1 class="main-content__title">The Music Space</h1>
-            <p class="main-content__description">
-              We designed TMS to be a comfortable, intimate, joyful space
-              Where we can hang out with all our friends and family, catch up
-              on things, share a meal, and experience an AMAZING musical
-              night.
-            </p>
-          </div>
-          <div class="main-gallery colo-5">
-            <div class="gallery-img-container row">
-              <img class="image1 col-4" src="./public/images/20.png" alt="person" />
-              <img class="image2 col-4" src="./public/images/21.png" alt="person" />
-              <img class="image3 col-4" src="./public/images/22.png" alt="person" />
-            </div>
-            <div class="gallery-img-container__small row">
-              <img class="image1 col-4" src="./public/images/99.png" alt="person" />
-              <img class="image2 col-4" src="./public/images/100.png" alt="person" />
-              <img class="image3 col-4" src="./public/images/101.png" alt="person" />
-            </div>
-            <div class="main-social row">
-              <div class="social-img-container">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M22.2691 0H1.7309C0.774902 0 0 0.774902 0 1.7309V22.2691C0 23.2251 0.774902 24 1.7309 24H22.2691C23.2251 24 24 23.2251 24 22.2691V1.7309C24 0.774902 23.2251 0 22.2691 0V0ZM8.51294 18.1406H5.59039V9.34808H8.51294V18.1406ZM7.05176 8.14746H7.03271C6.052 8.14746 5.41772 7.47235 5.41772 6.6286C5.41772 5.76581 6.07141 5.10938 7.07117 5.10938C8.07092 5.10938 8.68616 5.76581 8.7052 6.6286C8.7052 7.47235 8.07092 8.14746 7.05176 8.14746ZM19.051 18.1406H16.1288V13.4368C16.1288 12.2547 15.7057 11.4485 14.6483 11.4485C13.8409 11.4485 13.3601 11.9923 13.1488 12.5173C13.0715 12.7051 13.0527 12.9677 13.0527 13.2305V18.1406H10.1303C10.1303 18.1406 10.1686 10.173 10.1303 9.34808H13.0527V10.593C13.441 9.9939 14.1359 9.14172 15.6865 9.14172C17.6093 9.14172 19.051 10.3984 19.051 13.099V18.1406Z"
-                    fill="#777777" />
-                </svg>
+      <!-- start side -->
+      <div class="slideshow-container">
+        <div class="my-slides">
+          <section class="section home row page fs">
+            <aside class="aside col-2">
+              <div class="main-header">
+                <div class="main-header__logo">
+                  <a href="#"><img src="./public/images/logo1.png" alt="logo" /></a>
+                </div>
+                <nav class="main-header-nav">
+                  <a href="#" class="header-nav__link active" onclick="topFunction()" id="myBtn">Home</a>
+                  <a href="#" class="header-nav__link">Upcoming Event</a>
+                  <a href="#" class="header-nav__link">Contact Us</a>
+                  <a href="#" class="header-nav__link">FAQ’s</a>
+                </nav>
               </div>
-              <div class="social-img-container">
-                <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M24.2431 21.877C25.3072 21.7118 27.5089 21.3306 27.9301 20.3708C28.1424 19.8764 27.8391 19.4745 27.4517 19.4133V19.4121C23.7088 18.8023 22.0216 15.0068 21.9528 14.8451C20.9156 13.0039 23.7309 13.3135 24.8382 12.1908C25.9186 11.09 24.186 9.89802 23.1021 10.4039C22.6575 10.6107 21.9913 10.8509 21.5479 10.65C21.6529 8.90699 21.9435 6.01707 21.2306 4.43928C18.8329 -0.877381 11.7624 -1.06912 8.47684 2.01716C5.88783 4.44737 6.20518 6.94573 6.44787 10.65C5.64281 10.9976 4.84709 10.3069 4.26721 10.3069C3.65817 10.3069 2.94995 10.6985 2.83561 11.2887C2.69093 12.0637 3.54149 12.5627 4.27771 12.8503C5.53197 13.3377 6.72439 13.4821 6.06284 14.8127C6.05701 14.8231 6.05234 14.8335 6.04884 14.8439C5.11194 16.9623 3.06663 18.9986 0.548781 19.4098C0.142752 19.4756 -0.134934 19.8995 0.0680804 20.3673V20.3696C0.48461 21.3306 2.70727 21.7153 3.75618 21.877C4.08053 22.4776 3.83201 23.6638 4.83659 23.6638C5.22745 23.6638 5.9835 23.4109 6.9484 23.4109C8.35434 23.4109 8.83387 23.7147 9.96095 24.5024C11.1184 25.3121 12.3901 26.1033 13.9711 25.9889C15.6174 26.0906 16.8401 25.341 18.0395 24.5047L18.0407 24.5024C19.2098 23.6881 20.0452 23.0863 22.521 23.568C24.3528 23.9191 23.8184 22.6913 24.2431 21.877Z"
-                    fill="#777777" />
-                </svg>
+            </aside>
+            <div class="main home row col-10">
+              <div class="main-content col-7">
+                <h1 class="main-content__title">The Music Space</h1>
+                <p class="main-content__description">
+                  We designed TMS to be a comfortable, intimate, joyful space
+                  Where we can hang out with all our friends and family, catch up
+                  on things, share a meal, and experience an AMAZING musical
+                  night.
+                </p>
               </div>
-              <div class="social-img-container">
-                <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M11.5 2.162C8.4295 2.162 8.06533 2.174 6.85304 2.232C5.54396 2.294 4.32975 2.568 3.39538 3.543C2.461 4.518 2.19842 5.785 2.139 7.151C2.08342 8.416 2.07192 8.796 2.07192 12C2.07192 15.204 2.08342 15.584 2.139 16.849C2.19842 18.215 2.461 19.482 3.39538 20.457C4.32975 21.432 5.54396 21.706 6.85304 21.768C8.06533 21.826 8.4295 21.838 11.5 21.838C14.5705 21.838 14.9347 21.826 16.147 21.768C17.456 21.706 18.6702 21.432 19.6046 20.457C20.539 19.482 20.8016 18.215 20.861 16.849C20.9166 15.584 20.9281 15.204 20.9281 12C20.9281 8.796 20.9166 8.416 20.861 7.151C20.8016 5.785 20.539 4.518 19.6046 3.543C18.6702 2.568 17.456 2.294 16.147 2.232C14.9347 2.174 14.5705 2.162 11.5 2.162ZM11.5 0C14.6232 0 15.0152 0.014 16.2418 0.072C18.1106 0.161 19.7522 0.639 21.0699 2.014C22.3876 3.389 22.8457 5.102 22.931 7.052C22.9866 8.332 23 8.741 23 12C23 15.259 22.9866 15.668 22.931 16.948C22.8457 18.898 22.3876 20.611 21.0699 21.986C19.7522 23.361 18.1106 23.839 16.2418 23.928C15.0152 23.986 14.6232 24 11.5 24C8.37679 24 7.98483 23.986 6.75817 23.928C4.88942 23.839 3.24779 23.361 1.93008 21.986C0.612375 20.611 0.154292 18.898 0.069 16.948C0.0134167 15.668 0 15.259 0 12C0 8.741 0.0134167 8.332 0.069 7.052C0.154292 5.102 0.612375 3.389 1.93008 2.014C3.24779 0.639 4.88942 0.161 6.75817 0.072C7.98483 0.014 8.37679 0 11.5 0ZM11.5 5.838C14.7612 5.838 17.4053 8.597 17.4053 12C17.4053 15.403 14.7612 18.162 11.5 18.162C8.23879 18.162 5.59475 15.403 5.59475 12C5.59475 8.597 8.23879 5.838 11.5 5.838ZM11.5 16C13.617 16 15.3333 14.209 15.3333 12C15.3333 9.791 13.617 8 11.5 8C9.38304 8 7.66667 9.791 7.66667 12C7.66667 14.209 9.38304 16 11.5 16ZM17.6391 7.034C16.8769 7.034 16.2591 6.38929 16.2591 5.594C16.2591 4.79871 16.8769 4.154 17.6391 4.154C18.4012 4.154 19.0191 4.79871 19.0191 5.594C19.0191 6.38929 18.4012 7.034 17.6391 7.034Z"
-                    fill="#E5E5E5" fill-opacity="0.5" />
-                </svg>
+              <div class="main-gallery colo-5">
+                <div class="gallery-img-container row">
+                  <img class="image1 col-4" src="./public/images/20.png" alt="person" />
+                  <img class="image2 col-4" src="./public/images/21.png" alt="person" />
+                  <img class="image3 col-4" src="./public/images/22.png" alt="person" />
+                </div>
+                <div class="gallery-img-container__small row">
+                  <img class="image1 col-4" src="./public/images/99.png" alt="person" />
+                  <img class="image2 col-4" src="./public/images/100.png" alt="person" />
+                  <img class="image3 col-4" src="./public/images/101.png" alt="person" />
+                </div>
+                <div class="main-social row">
+                  <div class="social-img-container">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M22.2691 0H1.7309C0.774902 0 0 0.774902 0 1.7309V22.2691C0 23.2251 0.774902 24 1.7309 24H22.2691C23.2251 24 24 23.2251 24 22.2691V1.7309C24 0.774902 23.2251 0 22.2691 0V0ZM8.51294 18.1406H5.59039V9.34808H8.51294V18.1406ZM7.05176 8.14746H7.03271C6.052 8.14746 5.41772 7.47235 5.41772 6.6286C5.41772 5.76581 6.07141 5.10938 7.07117 5.10938C8.07092 5.10938 8.68616 5.76581 8.7052 6.6286C8.7052 7.47235 8.07092 8.14746 7.05176 8.14746ZM19.051 18.1406H16.1288V13.4368C16.1288 12.2547 15.7057 11.4485 14.6483 11.4485C13.8409 11.4485 13.3601 11.9923 13.1488 12.5173C13.0715 12.7051 13.0527 12.9677 13.0527 13.2305V18.1406H10.1303C10.1303 18.1406 10.1686 10.173 10.1303 9.34808H13.0527V10.593C13.441 9.9939 14.1359 9.14172 15.6865 9.14172C17.6093 9.14172 19.051 10.3984 19.051 13.099V18.1406Z"
+                        fill="#777777" />
+                    </svg>
+                  </div>
+                  <div class="social-img-container">
+                    <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24.2431 21.877C25.3072 21.7118 27.5089 21.3306 27.9301 20.3708C28.1424 19.8764 27.8391 19.4745 27.4517 19.4133V19.4121C23.7088 18.8023 22.0216 15.0068 21.9528 14.8451C20.9156 13.0039 23.7309 13.3135 24.8382 12.1908C25.9186 11.09 24.186 9.89802 23.1021 10.4039C22.6575 10.6107 21.9913 10.8509 21.5479 10.65C21.6529 8.90699 21.9435 6.01707 21.2306 4.43928C18.8329 -0.877381 11.7624 -1.06912 8.47684 2.01716C5.88783 4.44737 6.20518 6.94573 6.44787 10.65C5.64281 10.9976 4.84709 10.3069 4.26721 10.3069C3.65817 10.3069 2.94995 10.6985 2.83561 11.2887C2.69093 12.0637 3.54149 12.5627 4.27771 12.8503C5.53197 13.3377 6.72439 13.4821 6.06284 14.8127C6.05701 14.8231 6.05234 14.8335 6.04884 14.8439C5.11194 16.9623 3.06663 18.9986 0.548781 19.4098C0.142752 19.4756 -0.134934 19.8995 0.0680804 20.3673V20.3696C0.48461 21.3306 2.70727 21.7153 3.75618 21.877C4.08053 22.4776 3.83201 23.6638 4.83659 23.6638C5.22745 23.6638 5.9835 23.4109 6.9484 23.4109C8.35434 23.4109 8.83387 23.7147 9.96095 24.5024C11.1184 25.3121 12.3901 26.1033 13.9711 25.9889C15.6174 26.0906 16.8401 25.341 18.0395 24.5047L18.0407 24.5024C19.2098 23.6881 20.0452 23.0863 22.521 23.568C24.3528 23.9191 23.8184 22.6913 24.2431 21.877Z"
+                        fill="#777777" />
+                    </svg>
+                  </div>
+                  <div class="social-img-container">
+                    <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.5 2.162C8.4295 2.162 8.06533 2.174 6.85304 2.232C5.54396 2.294 4.32975 2.568 3.39538 3.543C2.461 4.518 2.19842 5.785 2.139 7.151C2.08342 8.416 2.07192 8.796 2.07192 12C2.07192 15.204 2.08342 15.584 2.139 16.849C2.19842 18.215 2.461 19.482 3.39538 20.457C4.32975 21.432 5.54396 21.706 6.85304 21.768C8.06533 21.826 8.4295 21.838 11.5 21.838C14.5705 21.838 14.9347 21.826 16.147 21.768C17.456 21.706 18.6702 21.432 19.6046 20.457C20.539 19.482 20.8016 18.215 20.861 16.849C20.9166 15.584 20.9281 15.204 20.9281 12C20.9281 8.796 20.9166 8.416 20.861 7.151C20.8016 5.785 20.539 4.518 19.6046 3.543C18.6702 2.568 17.456 2.294 16.147 2.232C14.9347 2.174 14.5705 2.162 11.5 2.162ZM11.5 0C14.6232 0 15.0152 0.014 16.2418 0.072C18.1106 0.161 19.7522 0.639 21.0699 2.014C22.3876 3.389 22.8457 5.102 22.931 7.052C22.9866 8.332 23 8.741 23 12C23 15.259 22.9866 15.668 22.931 16.948C22.8457 18.898 22.3876 20.611 21.0699 21.986C19.7522 23.361 18.1106 23.839 16.2418 23.928C15.0152 23.986 14.6232 24 11.5 24C8.37679 24 7.98483 23.986 6.75817 23.928C4.88942 23.839 3.24779 23.361 1.93008 21.986C0.612375 20.611 0.154292 18.898 0.069 16.948C0.0134167 15.668 0 15.259 0 12C0 8.741 0.0134167 8.332 0.069 7.052C0.154292 5.102 0.612375 3.389 1.93008 2.014C3.24779 0.639 4.88942 0.161 6.75817 0.072C7.98483 0.014 8.37679 0 11.5 0ZM11.5 5.838C14.7612 5.838 17.4053 8.597 17.4053 12C17.4053 15.403 14.7612 18.162 11.5 18.162C8.23879 18.162 5.59475 15.403 5.59475 12C5.59475 8.597 8.23879 5.838 11.5 5.838ZM11.5 16C13.617 16 15.3333 14.209 15.3333 12C15.3333 9.791 13.617 8 11.5 8C9.38304 8 7.66667 9.791 7.66667 12C7.66667 14.209 9.38304 16 11.5 16ZM17.6391 7.034C16.8769 7.034 16.2591 6.38929 16.2591 5.594C16.2591 4.79871 16.8769 4.154 17.6391 4.154C18.4012 4.154 19.0191 4.79871 19.0191 5.594C19.0191 6.38929 18.4012 7.034 17.6391 7.034Z"
+                        fill="#E5E5E5" fill-opacity="0.5" />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="dots row" style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)">❮</span>
+              <span class="dot" onclick="currentSlide(2)">❯</span>
+            </div>
+          </section>
         </div>
-        <div class="dots row" style="text-align: center">
-          <span class="dot" onclick="currentSlide(1)">❮</span>
-          <span class="dot" onclick="currentSlide(2)">❯</span>
+        <div class="my-slides">
+          <section class="section food-menu row page fr ">
+            <aside class="aside col-2">
+              <div class="main-header">
+                <div class="main-header__logo">
+                  <a href="#"><img src="./public/images/logo2.png" alt="logo" /></a>
+                </div>
+                <nav class="main-header-nav">
+                  <a href="#" class="header-nav__link active" onclick="topFunction()" id="myBtn">Home</a>
+                  <a href="#" class="header-nav__link">Upcoming Event</a>
+                  <a href="#" class="header-nav__link">Contact Us</a>
+                  <a href="#" class="header-nav__link">FAQ’s</a>
+                </nav>
+              </div>
+            </aside>
+            <div class="main food-menu col-10">
+              <div class="food-menu-content row">
+                <div class="heading">
+                  <h1 class="prev-event__title heading__title">Food Menu</h1>
+                  <span class="icon">“</span>
+                  <p class="heading__description">we have designed the menu to be tasty and fun.</p>
+                </div>
+                <div class="btn-container">
+                  <button class="btn">Download now</button>
+                </div>
+              </div>
+              <div class="prev-event-gallery row">
+                <div class="col-4">
+                  <img class="img-fluid" src="./public/images/33.png" alt="" />
+                </div>
+                <div class="col-8">
+                  <div class="row">
+                    <div class="col-5 text-center food-item">
+                      <img class="img-fluid" src="./public/images/34.png" alt="" />
+                      <div class="food-layer">
+                        <div class="layer-content">
+                          <h4 class="food__name">beef burger</h4>
+                          <span class="food__price">324.00 sar</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 text-center">
+                      <img class="img-fluid" src="./public/images/35.png" alt="" />
+                    </div>
+                    <div class="col-5 text-center food-item">
+                      <img class="img-fluid" src="./public/images/36.png" alt="" />
+                      <div class="food-layer">
+                        <div class="layer-content">
+                          <h4 class="food__name">beef burger</h4>
+                          <span class="food__price">324.00 sar</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-5 text-center food-item">
+                      <img class="img-fluid" src="./public/images/37.png" alt="" />
+                      <div class="food-layer">
+                        <div class="layer-content">
+                          <h4 class="food__name">beef burger</h4>
+                          <span class="food__price">324.00 sar</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2 text-center">
+                      <img class="img-fluid" src="./public/images/38.png" alt="" />
+                    </div>
+                    <div class="col-5 text-center food-item">
+                      <img class="img-fluid" src="./public/images/36.png" alt="" />
+                      <div class="food-layer">
+                        <div class="layer-content">
+                          <h4 class="food__name">beef burger</h4>
+                          <span class="food__price">324.00 sar</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="prev-event-gallery__alt row">
+                <div class="row">
+                  <img class="img-fluid" src="./public/images/204.png" alt="" />
+                </div>
+                <div class="row">
+                  <div class="col-6 row">
+                    <img class="img-fluid" src="./public/images/205.png" alt="" />
+                  </div>
+                  <div class="col-6 text-center">
+                    <div class="col-12"><img class="img-fluid " src="./public/images/206.png" alt="" /></div>
+                    <div class="col-12"><img class="img-fluid " src="./public/images/207.png" alt="" /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-container btn-container__alt">
+                <button class="btn">Download now</button>
+              </div>
+              <footer class="footer">
+                <div class="row">
+                  <div class="footer-content col-4">
+                    <h3 class="footer__heading">legal</h3>
+                    <div class="footer-content__items row">
+                      <div class="footer-content__item">terms of use</div>
+                      <div class="footer-content__item">privacy policy</div>
+                    </div>
+                  </div>
+                  <div class="footer-content col-4">
+                    <h3 class="footer__heading">company</h3>
+                    <div class="footer-content__items row">
+                      <div class="footer-content__item">contact us</div>
+                      <div class="footer-content__item">press material</div>
+                    </div>
+                  </div>
+                  <div class="footer-content col-4">
+                    <h3 class="footer__heading">download app</h3>
+                    <div class="footer-content__items row">
+                      <div class="footer-content__item"><img class="img-fluid" src="./public/images/appleStore.png"
+                          alt="">
+                      </div>
+                      <div class="footer-content__item"><img class="img-fluid" src="./public/images/googleStore.png"
+                          alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="social-icons row">
+                      <span class="linkedin social-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M22.2691 0H1.7309C0.774902 0 0 0.774902 0 1.7309V22.2691C0 23.2251 0.774902 24 1.7309 24H22.2691C23.2251 24 24 23.2251 24 22.2691V1.7309C24 0.774902 23.2251 0 22.2691 0V0ZM8.51294 18.1406H5.59039V9.34808H8.51294V18.1406ZM7.05176 8.14746H7.03271C6.052 8.14746 5.41772 7.47235 5.41772 6.6286C5.41772 5.76581 6.07141 5.10938 7.07117 5.10938C8.07092 5.10938 8.68616 5.76581 8.7052 6.6286C8.7052 7.47235 8.07092 8.14746 7.05176 8.14746ZM19.051 18.1406H16.1288V13.4368C16.1288 12.2547 15.7057 11.4485 14.6483 11.4485C13.8409 11.4485 13.3601 11.9923 13.1488 12.5173C13.0715 12.7051 13.0527 12.9677 13.0527 13.2305V18.1406H10.1303C10.1303 18.1406 10.1686 10.173 10.1303 9.34808H13.0527V10.593C13.441 9.9939 14.1359 9.14172 15.6865 9.14172C17.6093 9.14172 19.051 10.3984 19.051 13.099V18.1406Z"
+                            fill="#777777" />
+                        </svg>
+                      </span>
+                      <span class="snap social-icon"><svg width="28" height="26" viewBox="0 0 28 26" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M24.2431 21.877C25.3072 21.7118 27.5089 21.3306 27.9301 20.3708C28.1424 19.8764 27.8391 19.4745 27.4517 19.4133V19.4121C23.7088 18.8023 22.0216 15.0068 21.9528 14.8451C20.9156 13.0039 23.7309 13.3135 24.8382 12.1908C25.9186 11.09 24.186 9.89802 23.1021 10.4039C22.6575 10.6107 21.9913 10.8509 21.5479 10.65C21.6529 8.90699 21.9435 6.01707 21.2306 4.43928C18.8329 -0.877381 11.7624 -1.06912 8.47684 2.01716C5.88783 4.44737 6.20518 6.94573 6.44787 10.65C5.64281 10.9976 4.84709 10.3069 4.26721 10.3069C3.65817 10.3069 2.94995 10.6985 2.83561 11.2887C2.69093 12.0637 3.54149 12.5627 4.27771 12.8503C5.53197 13.3377 6.72439 13.4821 6.06284 14.8127C6.05701 14.8231 6.05234 14.8335 6.04884 14.8439C5.11194 16.9623 3.06663 18.9986 0.548781 19.4098C0.142752 19.4756 -0.134934 19.8995 0.0680804 20.3673V20.3696C0.48461 21.3306 2.70727 21.7153 3.75618 21.877C4.08053 22.4776 3.83201 23.6638 4.83659 23.6638C5.22745 23.6638 5.9835 23.4109 6.9484 23.4109C8.35434 23.4109 8.83387 23.7147 9.96095 24.5024C11.1184 25.3121 12.3901 26.1033 13.9711 25.9889C15.6174 26.0906 16.8401 25.341 18.0395 24.5047L18.0407 24.5024C19.2098 23.6881 20.0452 23.0863 22.521 23.568C24.3528 23.9191 23.8184 22.6913 24.2431 21.877Z"
+                            fill="#777777" />
+                        </svg>
+                      </span>
+                      <span class="instegram social-icon"><svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M11.5 2.162C8.4295 2.162 8.06533 2.174 6.85304 2.232C5.54396 2.294 4.32975 2.568 3.39538 3.543C2.461 4.518 2.19842 5.785 2.139 7.151C2.08342 8.416 2.07192 8.796 2.07192 12C2.07192 15.204 2.08342 15.584 2.139 16.849C2.19842 18.215 2.461 19.482 3.39538 20.457C4.32975 21.432 5.54396 21.706 6.85304 21.768C8.06533 21.826 8.4295 21.838 11.5 21.838C14.5705 21.838 14.9347 21.826 16.147 21.768C17.456 21.706 18.6702 21.432 19.6046 20.457C20.539 19.482 20.8016 18.215 20.861 16.849C20.9166 15.584 20.9281 15.204 20.9281 12C20.9281 8.796 20.9166 8.416 20.861 7.151C20.8016 5.785 20.539 4.518 19.6046 3.543C18.6702 2.568 17.456 2.294 16.147 2.232C14.9347 2.174 14.5705 2.162 11.5 2.162ZM11.5 0C14.6232 0 15.0152 0.014 16.2418 0.072C18.1106 0.161 19.7522 0.639 21.0699 2.014C22.3876 3.389 22.8457 5.102 22.931 7.052C22.9866 8.332 23 8.741 23 12C23 15.259 22.9866 15.668 22.931 16.948C22.8457 18.898 22.3876 20.611 21.0699 21.986C19.7522 23.361 18.1106 23.839 16.2418 23.928C15.0152 23.986 14.6232 24 11.5 24C8.37679 24 7.98483 23.986 6.75817 23.928C4.88942 23.839 3.24779 23.361 1.93008 21.986C0.612375 20.611 0.154292 18.898 0.069 16.948C0.0134167 15.668 0 15.259 0 12C0 8.741 0.0134167 8.332 0.069 7.052C0.154292 5.102 0.612375 3.389 1.93008 2.014C3.24779 0.639 4.88942 0.161 6.75817 0.072C7.98483 0.014 8.37679 0 11.5 0ZM11.5 5.838C14.7612 5.838 17.4053 8.597 17.4053 12C17.4053 15.403 14.7612 18.162 11.5 18.162C8.23879 18.162 5.59475 15.403 5.59475 12C5.59475 8.597 8.23879 5.838 11.5 5.838ZM11.5 16C13.617 16 15.3333 14.209 15.3333 12C15.3333 9.791 13.617 8 11.5 8C9.38304 8 7.66667 9.791 7.66667 12C7.66667 14.209 9.38304 16 11.5 16ZM17.6391 7.034C16.8769 7.034 16.2591 6.38929 16.2591 5.594C16.2591 4.79871 16.8769 4.154 17.6391 4.154C18.4012 4.154 19.0191 4.79871 19.0191 5.594C19.0191 6.38929 18.4012 7.034 17.6391 7.034Z"
+                            fill="#E5E5E5" fill-opacity="0.5" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="copyright col-12">copyright @ tms.ksa 2021</div>
+                </div>
+              </footer>
+            </div>
+            <div class="dots row" style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)">❮</span>
+              <span class="dot" onclick="currentSlide(2)">❯</span>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
+      <!-- end slide  -->
       <section class="section about row page sc ">
         <aside class="aside col-2">
           <div class="main-header">
